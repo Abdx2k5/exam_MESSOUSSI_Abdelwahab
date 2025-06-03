@@ -124,6 +124,19 @@ body {
 .search-bar input::placeholder {
   color: #999;
 }
+.side-nav a {
+  color: #111;              /* Couleur noire comme dans ta maquette */
+  text-decoration: none;    /* Supprime le soulignement */
+  font-weight: bold;
+  display: inline-block;
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.side-nav a:hover {
+  color: #444;              /* Optionnel : couleur grise au survol */
+}
 
 
 .collection-text h2 {
