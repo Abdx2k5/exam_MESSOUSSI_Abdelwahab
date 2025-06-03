@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Flick Collection</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="main-header">
-    <div class="logo">Flick</div>
+    <div class="header-left">
+      <span class="brand-name">Flick</span>
+      <div class="menu-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
     <nav class="nav-links">
       <a href="#">Home</a>
       <a href="#">Collections</a>
       <a href="#">Store</a>
     </nav>
-    <div class="icons">
-      <button><svg width="40" height="40" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" style="background:#000; border-radius:50%; padding:6px;">
-  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 
-  5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 
-  4.5 2.09C13.09 3.81 14.76 3 16.5 
-  3 19.58 3 22 5.42 22 8.5c0 
-  3.78-3.4 6.86-8.55 11.54L12 
-  21.35z"/>
-</svg>
-</button>
-      <button>🛒</button>
-      <button>⚙️</button>
+
+    <div class="icon-bar">
+      <div class="icon-circle">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2">
+          <path d="M20.8 4.6c-1.4-1.6-3.7-2-5.4-1-1 .6-1.8 1.5-2.4 2.5-.6-1-1.4-1.9-2.4-2.5-1.8-1-4-.6-5.4 1-1.7 2-1.4 5 .6 6.9l7.2 6.5 7.2-6.5c2-1.9 2.3-4.9.6-6.9z"/>
+        </svg>
+      </div>
+      <div class="cart-pill">Cart</div>
+      <div class="icon-circle">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2">
+          <path d="M6 2h12l-1.5 13.5H7.5L6 2z"/>
+          <circle cx="12" cy="19" r="2"/>
+        </svg>
+      </div>
+      <div class="icon-circle">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="white" stroke-width="2">
+          <circle cx="12" cy="8" r="4"/>
+          <path d="M4 20c0-4 4-7 8-7s8 3 8 7"/>
+        </svg>
+      </div>
     </div>
   </header>
 
@@ -55,73 +72,6 @@
       </div>
     </div>
   </section>
-
-  <section class="products">
-    <h2>NEW <br><span>THIS WEEK</span> 🆕</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://picsum.photos/200/250?random=4" alt="T-shirt 1">
-        <h3>Graphic T-shirt</h3>
-        <p>120 DH</p>
-      </div>
-      <div class="product-card">
-        <img src="https://picsum.photos/200/250?random=5" alt="T-shirt 2">
-        <h3>Basic White Tee</h3>
-        <p>100 DH</p>
-      </div>
-      <div class="product-card">
-        <img src="https://picsum.photos/200/250?random=6" alt="T-shirt 3">
-        <h3>Street Art Tee</h3>
-        <p>130 DH</p>
-      </div>
-      <div class="product-card">
-        <img src="https://picsum.photos/200/250?random=7" alt="T-shirt 4">
-        <h3>Minimal Print</h3>
-        <p>140 DH</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="xiv-collection">
-    <div class="xiv-header">
-      <h2>XIV <br><span>COLLECTIONS</span> 23–24</h2>
-      <div class="filters">
-        <button>Filtres</button>
-        <button>Tri</button>
-      </div>
-    </div>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://picsum.photos/200/250?random=8" alt="T-shirt A">
-        <h3>Oversized Tee</h3>
-        <p>150 DH</p>
-      </div>
-      <div class="product-card">
-        <img src="https://picsum.photos/200/250?random=9" alt="T-shirt B">
-        <h3>Urban Fit</h3>
-        <p>170 DH</p>
-      </div>
-      <div class="product-card">
-        <img src="https://picsum.photos/200/250?random=10" alt="T-shirt C">
-        <h3>Neutral Vibe</h3>
-        <p>160 DH</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="approach">
-    <h2>OUR APPROACH TO FASHION DESIGN</h2>
-    <p>We are focused on minimalism, quality and comfort. Our collections are inspired by everyday life and urban style.</p>
-    <div class="approach-grid">
-      <img src="https://picsum.photos/200/250?random=11" alt="Look A">
-      <img src="https://picsum.photos/200/250?random=12" alt="Look B">
-      <img src="https://picsum.photos/200/250?random=13" alt="Look C">
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="footer-logo">XIV<br><span>QR</span></div>
-  </footer>
 
 </body>
 </html>

@@ -1,12 +1,13 @@
-body {
+* {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  color: #111;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-section {
-  margin-bottom: 60px;
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #111;
 }
 
 .main-header {
@@ -14,14 +15,39 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
-.logo {
-  font-size: 24px;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-name {
+  font-size: 18px;
   font-weight: bold;
 }
+
+.menu-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-burger span {
+  display: block;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+}
+
+.menu-burger span:nth-child(1) { width: 24px; }
+.menu-burger span:nth-child(2) { width: 18px; }
+.menu-burger span:nth-child(3) { width: 12px; }
 
 .nav-links {
   display: flex;
@@ -34,19 +60,35 @@ section {
   font-weight: 500;
 }
 
-.icons button {
-  margin-left: 10px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
+.icon-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-pill {
+  background: black;
+  color: white;
+  border-radius: 24px;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
   padding: 60px 40px;
-  background: #fff;
   gap: 40px;
 }
 
@@ -56,7 +98,6 @@ section {
 
 .side-nav ul {
   list-style: none;
-  padding: 0;
   margin-bottom: 20px;
 }
 
@@ -111,143 +152,4 @@ section {
   height: 350px;
   object-fit: cover;
   border-radius: 8px;
-}
-
-.products {
-  background-color: #f9f9f9;
-  padding: 60px 40px;
-}
-
-.products h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
-  line-height: 1;
-}
-
-.products h2 span {
-  font-size: 40px;
-}
-
-.product-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.product-card {
-  width: 200px;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: scale(1.05);
-}
-
-.product-card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-.product-card h3 {
-  margin: 10px 0 5px;
-  font-size: 16px;
-}
-
-.product-card p {
-  font-size: 14px;
-  color: #666;
-}
-
-.xiv-collection {
-  background: #fff;
-  padding: 60px 40px;
-}
-
-.xiv-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.xiv-header h2 {
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.xiv-header h2 span {
-  font-size: 40px;
-}
-
-.filters button {
-  margin-left: 10px;
-  padding: 8px 16px;
-  border: 1px solid #aaa;
-  background: none;
-  cursor: pointer;
-}
-
-.approach {
-  text-align: center;
-  background: #f9f9f9;
-  padding: 60px 40px;
-}
-
-.approach h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.approach p {
-  font-size: 16px;
-  max-width: 600px;
-  margin: 0 auto 40px;
-  color: #555;
-}
-
-.approach-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.approach-grid img {
-  width: 200px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.site-footer {
-  background: #fff;
-  text-align: center;
-  padding: 60px 0;
-  color: #111;
-  border-top: 1px solid #eee;
-}
-
-.footer-logo {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 1;
-}
-
-.footer-logo span {
-  font-size: 32px;
-  letter-spacing: 4px;
 }
