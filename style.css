@@ -45,51 +45,68 @@ section {
 .hero {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 60px 40px;
   background: #fff;
-  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.hero-text {
+.hero-left {
   flex: 1;
-  min-width: 280px;
 }
 
-.hero-text h1 {
-  font-size: 48px;
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.side-nav ul li {
+  margin: 10px 0;
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  color: #111;
   font-weight: bold;
-  line-height: 1.2;
 }
 
-.hero-text span {
-  font-size: 56px;
-  color: #333;
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.hero-text p {
-  font-size: 18px;
-  margin: 20px 0;
+.collection-text h2 {
+  font-size: 32px;
+  margin: 20px 0 10px;
 }
 
-.hero-text button {
-  background: black;
+.collection-text h2 span {
+  font-size: 40px;
+}
+
+.collection-text p {
+  margin-bottom: 15px;
+}
+
+.collection-text button {
+  background-color: #111;
   color: white;
+  padding: 10px 20px;
   border: none;
-  padding: 12px 24px;
-  font-size: 16px;
   cursor: pointer;
 }
 
-.hero-images {
-  display: flex;
-  gap: 20px;
+.hero-right {
   flex: 2;
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
 
-.hero-images img {
+.slider-images img {
   width: 250px;
   height: 350px;
   object-fit: cover;
