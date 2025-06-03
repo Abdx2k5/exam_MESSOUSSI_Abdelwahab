@@ -267,3 +267,53 @@ body {
   background: #111;
   color: white;
 }
+
+
+.gallery-inner img {
+  width: 270px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  flex-shrink: 0;
+}
+.approach-design {
+  background: #f9f9f9;
+  padding: 60px 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.approach-design h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.approach-design p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.gallery-scroll {
+  display: flex;
+  gap: 100px;
+  padding-left: 100px;
+  transform: translateX(-40px);
+}
+
+.gallery-scroll img {
+  width: 240px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  align-items: center;
+}
+
