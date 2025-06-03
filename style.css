@@ -175,3 +175,35 @@ body {
   background: none;
   cursor: pointer;
 }
+.approach {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 60px 40px;
+}
+
+.approach h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.approach p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.approach-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.approach-grid img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+}
