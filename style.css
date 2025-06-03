@@ -145,3 +145,33 @@ body {
   font-size: 14px;
   color: #666;
 }
+.xiv-collection {
+  background: #fff;
+  padding: 60px 40px;
+}
+
+.xiv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.xiv-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.xiv-header h2 span {
+  font-size: 40px;
+}
+
+.filters button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: 1px solid #aaa;
+  background: none;
+  cursor: pointer;
+}
